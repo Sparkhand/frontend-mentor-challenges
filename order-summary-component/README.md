@@ -20,6 +20,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/responsive-order-summary-card-using-flexbox-R_oBnw-sA)
 - Live Site URL: [Add live site URL here](https://sparkhand.github.io/frontend-mentor-challenges/order-summary-component/index.html)
 
 ## Built with
