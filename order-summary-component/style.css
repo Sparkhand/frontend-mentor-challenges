@@ -14,7 +14,7 @@ body {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: -webkit-fill-available;
   background: url("./images/pattern-background-desktop.svg") center center no-repeat;
   background-size: cover;
   display: flex;
