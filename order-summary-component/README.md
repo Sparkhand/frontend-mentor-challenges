@@ -31,6 +31,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://sparkhand.github.io/)
+- Website - [Davide "Sparkhand" Tarpini](https://sparkhand.github.io/)
 - Frontend Mentor - [@Sparkhand](https://www.frontendmentor.io/profile/Sparkhand)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
