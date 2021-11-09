@@ -25,7 +25,6 @@ body {
 @media screen and (max-width: 768px) {
   .wrapper {
     background: url("./images/pattern-background-mobile.svg") center center no-repeat;
-    height: -webkit-fill-available;
   }
 }
 .wrapper .card {
