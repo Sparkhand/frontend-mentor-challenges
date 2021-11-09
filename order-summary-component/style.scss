@@ -1,7 +1,13 @@
 $small: 768px;
 
+html {
+    height: -webkit-fill-available;
+}
+
 body {
     width: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     margin: 0;
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
@@ -21,6 +27,7 @@ body {
 
     @media screen and (max-width: $small) {
         background: url('./images/pattern-background-mobile.svg') center center no-repeat;
+        min-height: -webkit-fill-available;
     }
 
     .card {
