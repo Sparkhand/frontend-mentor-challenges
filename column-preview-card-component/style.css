@@ -1,0 +1,113 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  min-width: 300px;
+  max-width: 900px;
+  margin: auto;
+  padding: 150px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .page-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+.page-wrapper .card {
+  padding: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .page-wrapper .card {
+    max-width: 90%;
+    min-height: 350px;
+  }
+}
+.page-wrapper .card .card-content .card-title {
+  margin: 30px 0;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+.page-wrapper .card .card-content .card-body {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.page-wrapper .card .card-button {
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  border-radius: 50px;
+  margin-top: 100px;
+  padding: 18px 35px;
+}
+.page-wrapper .card .card-button:hover {
+  outline: 2px solid #f2f2f2;
+  background-color: transparent;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .page-wrapper .card .card-button {
+    margin-top: 50px;
+  }
+}
+.page-wrapper .card-sedans {
+  background-color: #e38826;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .page-wrapper .card-sedans {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+}
+.page-wrapper .card-sedans .card-button {
+  color: #e38826;
+}
+.page-wrapper .card-suv {
+  background-color: #006970;
+}
+.page-wrapper .card-suv .card-button {
+  color: #006970;
+}
+.page-wrapper .card-luxury {
+  background-color: #004241;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .page-wrapper .card-luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
+.page-wrapper .card-luxury .card-button {
+  color: #004241;
+}
+.page-wrapper .attribution {
+  position: relative;
+  bottom: -150px;
+}
+@media screen and (min-width: 1024px) {
+  .page-wrapper .attribution {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
