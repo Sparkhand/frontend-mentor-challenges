@@ -144,6 +144,10 @@ body {
     .attribution {
         position: absolute;
         bottom: 0;
+
+        @media screen and (max-width: $small) {
+            bottom: -20px;
+        }
     }
 
 }
