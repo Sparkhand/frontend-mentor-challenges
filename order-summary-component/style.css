@@ -14,7 +14,7 @@ body {
 
 .wrapper {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   min-height: -webkit-fill-available;
   background: url("./images/pattern-background-desktop.svg") center center no-repeat;
   background-size: cover;
