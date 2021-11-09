@@ -28,7 +28,7 @@ body {
 
     @media screen and (max-width: $small) {
         background: url('./images/pattern-background-mobile.svg') center center no-repeat;
-        min-height: -webkit-fill-available;
+        height: -webkit-fill-available;
     }
 
     .card {
