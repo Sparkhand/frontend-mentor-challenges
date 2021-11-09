@@ -5,16 +5,19 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
   background-color: #e0e8ff;
 }
+@media screen and (max-width: 768px) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}
 
 .wrapper {
   width: 100%;
-  height: -webkit-fill-available;
   background: url("./images/pattern-background-desktop.svg") center center no-repeat;
   background-size: cover;
   display: flex;
