@@ -1,0 +1,122 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #e0e8ff;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url("/images/pattern-background-desktop.svg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    background: url("/images/pattern-background-mobile.svg") center center no-repeat;
+  }
+}
+.wrapper .card {
+  background-color: #f5f7ff;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 1.3rem;
+  text-align: center;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.123);
+}
+.wrapper .card img {
+  border-top-left-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
+}
+.wrapper .card .card-content {
+  padding: 45px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .card .card-content .card-title {
+  font-size: 25px;
+  font-weight: 900;
+}
+.wrapper .card .card-content .card-body {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 25px 0px;
+}
+.wrapper .card .card-content .card-plan {
+  width: 90%;
+  padding: 10px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(114, 128, 167, 0.082);
+  border-radius: 0.6rem;
+  margin-bottom: 30px;
+}
+.wrapper .card .card-content .card-plan .card-plan-icon {
+  border-radius: 100%;
+}
+.wrapper .card .card-content .card-plan .card-plan-details {
+  text-align: left;
+  flex: 2;
+  margin-left: 15px;
+}
+.wrapper .card .card-content .card-plan .card-plan-details .card-plan-name {
+  font-weight: 700;
+}
+.wrapper .card .card-content .card-plan .card-plan-details .card-plan-price {
+  color: #7280a7;
+}
+.wrapper .card .card-content .card-plan .card-plan-change {
+  color: #3829e0;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.wrapper .card .card-content .card-plan .card-plan-change:hover {
+  transition: all 0.3s ease-in-out;
+  color: #4638e0;
+  cursor: pointer;
+}
+.wrapper .card .card-content .card-submit {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  padding: 13px 0px;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 8px 0 rgba(56, 41, 224, 0.432);
+  transition: all 0.3s ease-in-out;
+}
+.wrapper .card .card-content .card-submit:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #4638e0;
+  cursor: pointer;
+}
+.wrapper .card .card-content .card-cancel {
+  padding-top: 25px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.wrapper .card .card-content .card-cancel:hover {
+  transition: all 0.3s ease-in-out;
+  color: #1f2f56;
+  cursor: pointer;
+}
+.wrapper .attribution {
+  position: absolute;
+  bottom: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
