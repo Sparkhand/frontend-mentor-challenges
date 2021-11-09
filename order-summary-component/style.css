@@ -118,10 +118,5 @@ body {
   position: absolute;
   bottom: 0;
 }
-@media screen and (max-width: 768px) {
-  .wrapper .attribution {
-    bottom: -20px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
