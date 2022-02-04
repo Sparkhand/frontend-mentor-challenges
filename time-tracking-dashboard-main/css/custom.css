@@ -1,0 +1,241 @@
+body {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #0f1424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  color: #FFFFFF;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-auto-rows: 1fr;
+}
+.container .user {
+  grid-area: 1/1/3/2;
+}
+.container .user .user-info {
+  z-index: 10;
+  position: relative;
+  padding: 30px 30px 90px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #5847eb;
+  border-radius: 1.2rem;
+}
+.container .user .user-info .propic {
+  max-width: 40%;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  padding: 3px;
+  margin-bottom: 40px;
+}
+.container .user .user-info .description .report-tag {
+  opacity: 0.5;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+.container .user .user-info .description .user-name {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.container .user .selectors {
+  margin-top: -25px;
+  background-color: #1c1f4a;
+  border-radius: 1.2rem;
+  padding: 70px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+}
+.container .user .selectors .selector {
+  background: transparent;
+  border: none;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+.container .user .selectors .selector:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+.container .user .selectors .selected {
+  opacity: 1;
+}
+.container .activity {
+  display: flex;
+  flex-direction: column;
+}
+.container .activity .activity-image {
+  flex: 1;
+  border-radius: 1.2rem;
+  text-align: right;
+  overflow: hidden;
+  max-height: 80px;
+  padding: 0px 1 0px;
+}
+.container .activity .activity-image .activity-icon {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+}
+.container .activity .activity-infos {
+  flex: 1;
+  margin-top: -35px;
+  z-index: 1000;
+  border-radius: 1.2rem;
+  background: #1c1f4a;
+  padding: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.container .activity .activity-infos:hover {
+  cursor: pointer;
+  background-color: #6f76c8;
+  transition: all 0.2s ease-in-out;
+}
+.container .activity .activity-infos .activity-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.container .activity .activity-infos .activity-header .activity-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.container .activity .activity-infos .activity-header .ellipsis {
+  height: 10%;
+}
+.container .activity .activity-infos .current-hours .hours {
+  display: none;
+  font-size: 3.5rem;
+}
+.container .activity .activity-infos .current-hours .visible {
+  display: block;
+}
+.container .activity .activity-infos .last-hours .last {
+  display: none;
+  font-size: 0.9rem;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+.container .activity .activity-infos .last-hours .visible {
+  display: block;
+}
+.container .work {
+  grid-area: 1/2/2/3;
+}
+.container .work .activity-image {
+  background-color: #ff8c66;
+}
+.container .play {
+  grid-area: 1/3/2/4;
+}
+.container .play .activity-image {
+  background-color: #56c2e6;
+}
+.container .study {
+  grid-area: 1/4/2/5;
+}
+.container .study .activity-image {
+  background-color: #ff5c7c;
+}
+.container .exercise {
+  grid-area: 2/2/3/3;
+}
+.container .exercise .activity-image {
+  background-color: #4acf81;
+}
+.container .exercise .activity-image .activity-icon {
+  top: 8px;
+}
+.container .social {
+  grid-area: 2/3/3/4;
+}
+.container .social .activity-image {
+  background-color: #7536d3;
+}
+.container .selfcare {
+  grid-area: 2/4/3/5;
+}
+.container .selfcare .activity-image {
+  background-color: #f1c65b;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .activity {
+    display: block;
+  }
+  .container .activity .activity-image {
+    height: 80px;
+    padding: 0 20px;
+  }
+  .container .activity .activity-infos {
+    position: relative;
+    z-index: 1000;
+  }
+  .container .activity .activity-infos .activity-hours {
+    display: flex;
+    max-width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .container .activity .activity-infos .activity-hours .hours {
+    font-size: 2rem;
+  }
+  .container .activity .activity-infos .activity-hours .last {
+    font-size: 0.8rem;
+  }
+  .container .user .user-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container .user .user-info .propic {
+    margin: 0;
+    width: 20%;
+  }
+  .container .user .user-info .description {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+  .container .user .user-info .description .user-name {
+    font-size: 1.5rem;
+  }
+  .container .user .selectors {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */

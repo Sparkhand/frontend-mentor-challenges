@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="user">
+      <div class="user-info">
+        <img src="images/image-jeremy.png" alt="" class="propic">
+        <div class="description">
+          <div class="report-tag">Report for</div>
+          <h1 class="user-name">Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="selectors">
+        <button class="selector daily selected">Daily</button>
+        <button class="selector weekly">Weekly</button>
+        <button class="selector monthly">Monthly</button>
+      </div>
+    </div>
+    <div class="activity work">
+      <div class="activity-image">
+        <img src="images/icon-work.svg" alt="" class="activity-icon">
+      </div>
+      <div class="activity-infos">
+        <div class="activity-header">
+          <h3 class="activity-title">Work</h3>
+          <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="activity-hours">
+          <div class="current-hours">
+            <h2 class="hours daily visible">5hrs</h2>
+            <h2 class="hours weekly">32hrs</h2>
+            <h2 class="hours monthly">103hrs</h2>
+          </div>
+          <div class="last-hours">
+            <h2 class="last daily visible">Last Day - 7hrs</h2>
+            <h2 class="last weekly">Last Week - 36hrs</h2>
+            <h2 class="last monthly">Last Month - 128hrs</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activity play">
+      <div class="activity-image">
+        <img src="images/icon-play.svg" alt="" class="activity-icon">
+      </div>
+      <div class="activity-infos">
+        <div class="activity-header">
+          <h3 class="activity-title">Play</h3>
+          <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="activity-hours">
+          <div class="current-hours">
+            <h2 class="hours daily visible">1hrs</h2>
+            <h2 class="hours weekly">10hrs</h2>
+            <h2 class="hours monthly">23hrs</h2>
+          </div>
+          <div class="last-hours">
+            <h2 class="last daily visible">Last Day - 2hrs</h2>
+            <h2 class="last weekly">Last Week - 8hrs</h2>
+            <h2 class="last monthly">Last Month - 29hrs</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activity study">
+      <div class="activity-image">
+        <img src="images/icon-study.svg" alt="" class="activity-icon">
+      </div>
+      <div class="activity-infos">
+        <div class="activity-header">
+          <h3 class="activity-title">Study</h3>
+          <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="activity-hours">
+          <div class="current-hours">
+            <h2 class="hours daily visible">0hrs</h2>
+            <h2 class="hours weekly">4hrs</h2>
+            <h2 class="hours monthly">13hrs</h2>
+          </div>
+          <div class="last-hours">
+            <h2 class="last daily visible">Last Day - 1hrs</h2>
+            <h2 class="last weekly">Last Week - 7hrs</h2>
+            <h2 class="last monthly">Last Month - 19hrs</h2>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="activity exercise">
+      <div class="activity-image">
+        <img src="images/icon-exercise.svg" alt="" class="activity-icon">
+      </div>
+      <div class="activity-infos">
+        <div class="activity-header">
+          <h3 class="activity-title">Exercise</h3>
+          <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="activity-hours">
+          <div class="current-hours">
+            <h2 class="hours daily visible">1hrs</h2>
+            <h2 class="hours weekly">4hrs</h2>
+            <h2 class="hours monthly">11hrs</h2>
+          </div>
+          <div class="last-hours">
+            <h2 class="last daily visible">Last Day - 1hrs</h2>
+            <h2 class="last weekly">Last Week - 5hrs</h2>
+            <h2 class="last monthly">Last Month - 18hrs</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activity social">
+      <div class="activity-image">
+        <img src="images/icon-social.svg" alt="" class="activity-icon">
+      </div>
+      <div class="activity-infos">
+        <div class="activity-header">
+          <h3 class="activity-title">Social</h3>
+          <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="activity-hours">
+          <div class="current-hours">
+            <h2 class="hours daily visible">1hrs</h2>
+            <h2 class="hours weekly">5hrs</h2>
+            <h2 class="hours monthly">21hrs</h2>
+          </div>
+          <div class="last-hours">
+            <h2 class="last daily visible">Last Day - 3hrs</h2>
+            <h2 class="last weekly">Last Week - 10hrs</h2>
+            <h2 class="last monthly">Last Month - 23hrs</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activity selfcare">
+      <div class="activity-image">
+        <img src="images/icon-self-care.svg" alt="" class="activity-icon">
+      </div>
+        <div class="activity-infos">
+          <div class="activity-header">
+            <h3 class="activity-title">Self Care</h3>
+            <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+          </div>
+          <div class="activity-hours">
+
+            <div class="current-hours">
+              <h2 class="hours daily visible">0hrs</h2>
+              <h2 class="hours weekly">2hrs</h2>
+              <h2 class="hours monthly">7hrs</h2>
+            </div>
+            <div class="last-hours">
+              <h2 class="last daily visible">Last Day - 1hrs</h2>
+              <h2 class="last weekly">Last Week - 2hrs</h2>
+              <h2 class="last monthly">Last Month - 11hrs</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
