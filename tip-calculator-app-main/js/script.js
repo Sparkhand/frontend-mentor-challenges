@@ -133,7 +133,7 @@ const calculate = () => {
 
     let totalTip = (tip * bill) / 100;
     tipOutput.innerHTML = (totalTip / people).toFixed(2);
-    totalOutput.innerHTML = (bill / people).toFixed(2);
+    totalOutput.innerHTML = ((bill + totalTip) / people).toFixed(2);
 }
 
 
