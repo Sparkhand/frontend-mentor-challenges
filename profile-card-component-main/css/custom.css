@@ -1,0 +1,74 @@
+/* COLORS */
+/* FONTS */
+/* STYLES */
+body {
+  background-color: #19a2ae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+.card {
+  background-color: aliceblue;
+  border-radius: 1rem;
+}
+.card .card-featured-image {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+.card .card-body .user-propic {
+  margin-top: -3.2rem;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+  outline: 5px solid white;
+}
+.card .card-body .user-anagraphic .user-name {
+  color: #2d3248;
+  font-weight: 700;
+}
+.card .card-body .user-anagraphic .user-age {
+  margin-left: 0.5rem;
+  color: #6a6f81;
+}
+.card .card-body .user-location {
+  margin-top: 0.5rem;
+  font-size: 15px;
+  color: #6a6f81;
+}
+.card .card-body .line {
+  margin-top: 1rem;
+  width: calc(100% + 4rem);
+  border: none;
+  border-top: 0.01rem solid rgba(150, 150, 150, 0.308);
+  margin-left: -2rem;
+}
+.card .card-body .card-counters {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.card .card-body .card-counters .counter-element {
+  margin: 1rem;
+}
+.card .card-body .card-counters .counter-element .element-count {
+  color: #2d3248;
+  font-weight: 700;
+}
+.card .card-body .card-counters .counter-element .element-description {
+  color: #6a6f81;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+}
+
+/*# sourceMappingURL=custom.css.map */
