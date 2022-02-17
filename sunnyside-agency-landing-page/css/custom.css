@@ -190,8 +190,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 35rem 2.5rem 1.5rem 2.5rem;
+  justify-content: flex-end;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
   box-sizing: border-box;
 }
 .cta .cta-card .cta-title {
@@ -469,6 +469,8 @@ footer .footer-icons a img:hover {
   }
   .cta .cta-card {
     height: 90vh;
+    justify-content: flex-start;
+    padding: 35rem 2.5rem 1.5rem 2.5rem;
   }
   .cta .cta-card .cta-body {
     padding: 0 10rem;
