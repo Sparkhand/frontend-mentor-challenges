@@ -151,13 +151,24 @@ body {
   grid-area: 2/1/3/2;
 }
 .callouts .transform-text .transform-learnmore {
-  background: linear-gradient(to top, #fad400 50%, transparent 50%);
+  position: relative;
   transition: all 0.2s ease-in-out;
 }
-.callouts .transform-text .transform-learnmore:hover {
+.callouts .transform-text .transform-learnmore::after {
+  position: absolute;
+  top: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 1rem;
+  content: "";
+  background-color: rgba(250, 212, 0, 0.3);
+  border-radius: 0.4rem;
   transition: all 0.2s ease-in-out;
-  border: 1px transparent;
-  border-radius: 10px;
+  z-index: -1;
+}
+.callouts .transform-text .transform-learnmore:hover::after {
+  background-color: rgba(250, 212, 0, 0.678);
 }
 .callouts .standout-image {
   grid-area: 3/1/4/2;
@@ -168,12 +179,23 @@ body {
   grid-area: 4/1/5/2;
 }
 .callouts .standout-text .standout-learnmore {
-  background: linear-gradient(to top, #fe7867 50%, transparent 50%);
+  position: relative;
 }
-.callouts .standout-text .standout-learnmore:hover {
-  transition: all 0.2s ease-in-out;
-  border: 1px transparent;
-  border-radius: 10px;
+.callouts .standout-text .standout-learnmore::after {
+  position: absolute;
+  top: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 1rem;
+  content: "";
+  background-color: rgba(254, 120, 103, 0.3);
+  border-radius: 0.4rem;
+  transition: 0.3s ease;
+  z-index: -1;
+}
+.callouts .standout-text .standout-learnmore:hover::after {
+  background-color: rgba(247, 81, 59, 0.486);
 }
 
 .cta {
@@ -423,16 +445,16 @@ footer .footer-icons a img:hover {
     grid-row-gap: 0px;
   }
   .callouts .callout-image {
-    height: 90vh;
+    height: 70vh;
   }
   .callouts .callout-text {
-    height: 90vh;
+    height: 70vh;
     text-align: left;
     align-items: flex-start;
-    padding: 10rem;
+    padding: 3rem 5rem;
   }
   .callouts .callout-text .callout-title {
-    font-size: calc(18px + 2.5rem);
+    font-size: calc(18px + 1.5rem);
   }
   .callouts .callout-text .callout-body {
     font-size: calc(18px + 0.3rem);
@@ -445,7 +467,7 @@ footer .footer-icons a img:hover {
   }
   .callouts .transform-image {
     grid-area: 1/2/2/3;
-    background: url("../images/desktop/image-transform.jpg") no-repeat;
+    background: url("../images/desktop/image-transform.jpg") no-repeat center center;
     background-size: cover;
   }
   .callouts .transform-text {
@@ -453,7 +475,7 @@ footer .footer-icons a img:hover {
   }
   .callouts .standout-image {
     grid-area: 2/1/3/2;
-    background: url("../images/desktop/image-stand-out.jpg") no-repeat;
+    background: url("../images/desktop/image-stand-out.jpg") no-repeat center center;
     background-size: cover;
   }
   .callouts .standout-text {
@@ -470,10 +492,10 @@ footer .footer-icons a img:hover {
   .cta .cta-card {
     height: 90vh;
     justify-content: flex-start;
-    padding: 35rem 2.5rem 1.5rem 2.5rem;
+    align-items: center;
+    padding: 33rem 3rem 0.8rem 3rem;
   }
   .cta .cta-card .cta-body {
-    padding: 0 10rem;
     font-size: calc(18px + 0.3rem);
   }
   .cta .graphic-design {
@@ -535,12 +557,12 @@ footer .footer-icons a img:hover {
   }
   .gallery .orange {
     grid-area: 1/2/2/3;
-    background: url("../images/desktop/image-gallery-orange.jpg") no-repeat;
+    background: url("../images/desktop/image-gallery-orange.jpg") no-repeat center center;
     background-size: cover;
   }
   .gallery .cone {
     grid-area: 1/3/2/4;
-    background: url("../images/desktop/image-gallery-cone.jpg") no-repeat;
+    background: url("../images/desktop/image-gallery-cone.jpg") no-repeat center center;
     background-size: cover;
   }
   .gallery .sugar {
