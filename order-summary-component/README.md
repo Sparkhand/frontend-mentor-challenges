@@ -1,8 +1,8 @@
-# Frontend Mentor - Order summary card
+# Frontend Mentor - Order summary component
 
 ![Design preview for the Order summary component coding challenge](./design/desktop-preview.jpg)
 
-[Live Preview](https://sparkhand.github.io/frontend-mentor-challenges/order-summary/)
+[Live Preview](https://sparkhand.github.io/frontend-mentor-challenges/order-summary-component/)
 
 ## The challenge
 

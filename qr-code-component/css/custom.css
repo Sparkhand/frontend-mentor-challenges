@@ -1,0 +1,39 @@
+/* COLORS */
+/* FONTS */
+/* STYLES */
+body {
+  background-color: #d6e2f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+
+main {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 300px;
+}
+main .card-image {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .card-body {
+  margin-top: 0.7rem;
+  text-align: center;
+  padding: 0.3rem;
+}
+main .card-body .card-title {
+  font-size: 20px;
+  color: #1f3251;
+  font-weight: 700;
+}
+main .card-body .card-text {
+  margin-top: 0.7rem;
+  color: #7b879d;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=custom.css.map */

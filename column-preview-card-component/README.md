@@ -1,8 +1,8 @@
-# Frontend Mentor - 3-Column preview card
+# Frontend Mentor - 3-Column preview card component
 
 ![Design preview for the 3-Column preview card component coding challenge](./design/desktop-preview.jpg)
 
-[Live Preview](https://sparkhand.github.io/frontend-mentor-challenges/order-summary/)
+[Live Preview](https://sparkhand.github.io/frontend-mentor-challenges/order-summary-component/)
 
 ## The challenge
 

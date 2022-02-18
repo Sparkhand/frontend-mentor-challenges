@@ -2,7 +2,7 @@
 
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
-[Live Preview](https://sparkhand.github.io/frontend-mentor-challenges/profile-card/)
+[Live Preview](https://sparkhand.github.io/frontend-mentor-challenges/profile-card-component/)
 
 ## The challenge
 
